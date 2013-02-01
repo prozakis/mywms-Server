@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE jnlp PUBLIC "-//Sun Microsystems, Inc//DTD JNLP Discriptor 1.5//EN" "http://java.sun.com/dtd/JNLP-1.5.dtd">
+<jnlp spec="1.0+" codebase="file:/home/Parhs/Documents/Programming/Java/mywms/rich.client/los.reference/dist/jnlp/local/">
+  <information>
+      <title>Melisa Reference Client</title>
+      <vendor>LinogistX GmbH</vendor>
+      <description>myWMS LOS reference implementation</description>
+      <icon href="master.gif"/>
+  </information>
+  <security><all-permissions/></security>
+  <resources>
+    <!-- The following property is needed when running with unsigned jars: -->
+    <property name="netbeans.jnlp.fixPolicy" value="false"/>
+    <extension name='branding' href='branding.jnlp' />
+	<property name="java.naming.provider.url" value="localhost:1099"/>
+	<property name="org.mywms.env.applicationName" value="los.reference"/>
+<!-- The following line will be replaced with an automatically generated list of resources: -->
+
+    <j2se version="1.5+"/>
+    <jar href="startup.jar"/>
+    <property name="netbeans.user" value="${user.home}/.nbapp-los_reference"/>
+    <extension name='antlr' href='netbeans/antlr.jnlp' />
+    <extension name='de.linogistix.common' href='netbeans/de-linogistix-common.jnlp' />
+    <extension name='de.linogistix.inventory' href='netbeans/de-linogistix-inventory.jnlp' />
+    <extension name='de.linogistix.ireport' href='netbeans/de-linogistix-ireport.jnlp' />
+    <extension name='de.linogistix.location' href='netbeans/de-linogistix-location.jnlp' />
+    <extension name='de.linogistix.logviewer' href='netbeans/de-linogistix-logviewer.jnlp' />
+    <extension name='de.linogistix.los.common.ejb' href='netbeans/de-linogistix-los-common-ejb.jnlp' />
+    <extension name='de.linogistix.los.inventory.ejb' href='netbeans/de-linogistix-los-inventory-ejb.jnlp' />
+    <extension name='de.linogistix.los.model.location.ejb' href='netbeans/de-linogistix-los-model-location-ejb.jnlp' />
+    <extension name='de.linogistix.los.reference.ejb' href='app/de-linogistix-los-reference-ejb.jnlp' />
+    <extension name='de.linogistix.los.stocktaking.ejb' href='netbeans/de-linogistix-los-stocktaking-ejb.jnlp' />
+    <extension name='de.linogistix.losdataimporter' href='netbeans/de-linogistix-losdataimporter.jnlp' />
+    <extension name='de.linogistix.reference' href='app/de-linogistix-reference.jnlp' />
+    <extension name='de.linogistix.reports' href='netbeans/de-linogistix-reports.jnlp' />
+    <extension name='de.linogistix.stocktaking' href='netbeans/de-linogistix-stocktaking.jnlp' />
+    <extension name='de.linogistix.wmsprocesses' href='netbeans/de-linogistix-wmsprocesses.jnlp' />
+    <extension name='javax.jaxb' href='netbeans/javax-jaxb.jnlp' />
+    <extension name='org.apache.commons' href='netbeans/org-apache-commons.jnlp' />
+    <extension name='org.jboss' href='netbeans/org-jboss.jnlp' />
+    <extension name='org.jdesktop.layout' href='netbeans/org-jdesktop-layout.jnlp' />
+    <extension name='org.jdesktop.swingx' href='netbeans/org-jdesktop-swingx.jnlp' />
+    <extension name='org.mywms' href='netbeans/org-mywms.jnlp' />
+    <extension name='org.netbeans.api.annotations.common' href='netbeans/org-netbeans-api-annotations-common.jnlp' />
+    <extension name='org.netbeans.api.progress' href='netbeans/org-netbeans-api-progress.jnlp' />
+    <extension name='org.netbeans.api.visual' href='netbeans/org-netbeans-api-visual.jnlp' />
+    <extension name='org.netbeans.bootstrap' href='netbeans/org-netbeans-bootstrap.jnlp' />
+    <extension name='org.netbeans.core.execution' href='netbeans/org-netbeans-core-execution.jnlp' />
+    <extension name='org.netbeans.core.io.ui' href='netbeans/org-netbeans-core-io-ui.jnlp' />
+    <extension name='org.netbeans.core.multiview' href='netbeans/org-netbeans-core-multiview.jnlp' />
+    <extension name='org.netbeans.core.nativeaccess' href='netbeans/org-netbeans-core-nativeaccess.jnlp' />
+    <extension name='org.netbeans.core.output2' href='netbeans/org-netbeans-core-output2.jnlp' />
+    <extension name='org.netbeans.core.startup' href='netbeans/org-netbeans-core-startup.jnlp' />
+    <extension name='org.netbeans.core.ui' href='netbeans/org-netbeans-core-ui.jnlp' />
+    <extension name='org.netbeans.core.windows' href='netbeans/org-netbeans-core-windows.jnlp' />
+    <extension name='org.netbeans.core' href='netbeans/org-netbeans-core.jnlp' />
+    <extension name='org.netbeans.libs.jna' href='netbeans/org-netbeans-libs-jna.jnlp' />
+    <extension name='org.netbeans.libs.jsr223' href='netbeans/org-netbeans-libs-jsr223.jnlp' />
+    <extension name='org.netbeans.libs.junit4' href='netbeans/org-netbeans-libs-junit4.jnlp' />
+    <extension name='org.netbeans.modules.applemenu' href='netbeans/org-netbeans-modules-applemenu.jnlp' />
+    <extension name='org.netbeans.modules.autoupdate.services' href='netbeans/org-netbeans-modules-autoupdate-services.jnlp' />
+    <extension name='org.netbeans.modules.autoupdate.ui' href='netbeans/org-netbeans-modules-autoupdate-ui.jnlp' />
+    <extension name='org.netbeans.modules.core.kit' href='netbeans/org-netbeans-modules-core-kit.jnlp' />
+    <extension name='org.netbeans.modules.editor.mimelookup.impl' href='netbeans/org-netbeans-modules-editor-mimelookup-impl.jnlp' />
+    <extension name='org.netbeans.modules.editor.mimelookup' href='netbeans/org-netbeans-modules-editor-mimelookup.jnlp' />
+    <extension name='org.netbeans.modules.favorites' href='netbeans/org-netbeans-modules-favorites.jnlp' />
+    <extension name='org.netbeans.modules.javahelp' href='netbeans/org-netbeans-modules-javahelp.jnlp' />
+    <extension name='org.netbeans.modules.masterfs' href='netbeans/org-netbeans-modules-masterfs.jnlp' />
+    <extension name='org.netbeans.modules.options.api' href='netbeans/org-netbeans-modules-options-api.jnlp' />
+    <extension name='org.netbeans.modules.options.keymap' href='netbeans/org-netbeans-modules-options-keymap.jnlp' />
+    <extension name='org.netbeans.modules.print' href='netbeans/org-netbeans-modules-print.jnlp' />
+    <extension name='org.netbeans.modules.progress.ui' href='netbeans/org-netbeans-modules-progress-ui.jnlp' />
+    <extension name='org.netbeans.modules.queries' href='netbeans/org-netbeans-modules-queries.jnlp' />
+    <extension name='org.netbeans.modules.sendopts' href='netbeans/org-netbeans-modules-sendopts.jnlp' />
+    <extension name='org.netbeans.modules.settings' href='netbeans/org-netbeans-modules-settings.jnlp' />
+    <extension name='org.netbeans.modules.spi.actions' href='netbeans/org-netbeans-modules-spi-actions.jnlp' />
+    <extension name='org.netbeans.modules.templates' href='netbeans/org-netbeans-modules-templates.jnlp' />
+    <extension name='org.netbeans.spi.quicksearch' href='netbeans/org-netbeans-spi-quicksearch.jnlp' />
+    <extension name='org.netbeans.swing.outline' href='netbeans/org-netbeans-swing-outline.jnlp' />
+    <extension name='org.netbeans.swing.plaf' href='netbeans/org-netbeans-swing-plaf.jnlp' />
+    <extension name='org.netbeans.swing.tabcontrol' href='netbeans/org-netbeans-swing-tabcontrol.jnlp' />
+    <extension name='org.openide.actions' href='netbeans/org-openide-actions.jnlp' />
+    <extension name='org.openide.awt' href='netbeans/org-openide-awt.jnlp' />
+    <extension name='org.openide.compat' href='netbeans/org-openide-compat.jnlp' />
+    <extension name='org.openide.dialogs' href='netbeans/org-openide-dialogs.jnlp' />
+    <extension name='org.openide.execution' href='netbeans/org-openide-execution.jnlp' />
+    <extension name='org.openide.explorer' href='netbeans/org-openide-explorer.jnlp' />
+    <extension name='org.openide.filesystems' href='netbeans/org-openide-filesystems.jnlp' />
+    <extension name='org.openide.io' href='netbeans/org-openide-io.jnlp' />
+    <extension name='org.openide.loaders' href='netbeans/org-openide-loaders.jnlp' />
+    <extension name='org.openide.modules' href='netbeans/org-openide-modules.jnlp' />
+    <extension name='org.openide.nodes' href='netbeans/org-openide-nodes.jnlp' />
+    <extension name='org.openide.options' href='netbeans/org-openide-options.jnlp' />
+    <extension name='org.openide.text' href='netbeans/org-openide-text.jnlp' />
+    <extension name='org.openide.util.enumerations' href='netbeans/org-openide-util-enumerations.jnlp' />
+    <extension name='org.openide.util' href='netbeans/org-openide-util.jnlp' />
+    <extension name='org.openide.windows' href='netbeans/org-openide-windows.jnlp' />
+
+  </resources>
+  <resources os="Mac OS X">
+      <property name="netbeans.user" value="${user.home}/Library/Application Support/los_reference"/>
+  </resources>
+  <application-desc>
+    <argument>--branding</argument>
+    <argument>los_reference</argument>
+  </application-desc>
+</jnlp>  

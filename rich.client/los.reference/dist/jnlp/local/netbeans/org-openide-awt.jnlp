@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE jnlp PUBLIC "-//Sun Microsystems, Inc//DTD JNLP Discriptor 1.5//EN" "http://java.sun.com/dtd/JNLP-1.5.dtd">
+<jnlp spec='1.0+' codebase='file:/home/Parhs/Documents/Programming/Java/mywms/rich.client/los.reference/dist/jnlp/local/netbeans/'>
+  <information>
+   <title>UI Utilities API</title>
+   <vendor>NetBeans</vendor>
+   <description kind='one-line'>User interface utilities.</description>
+   <description kind='short'>Helper methods for various UI related tasks.</description>
+  </information>
+<security><all-permissions/></security>
+  <resources>
+    <jar href='org-openide-awt/org-openide-awt.jar'/>
+  </resources>
+  <component-desc/>
+</jnlp>

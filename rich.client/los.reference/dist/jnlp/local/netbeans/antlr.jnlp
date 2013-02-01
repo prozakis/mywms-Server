@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE jnlp PUBLIC "-//Sun Microsystems, Inc//DTD JNLP Discriptor 1.5//EN" "http://java.sun.com/dtd/JNLP-1.5.dtd">
+<jnlp spec='1.0+' codebase='file:/home/Parhs/Documents/Programming/Java/mywms/rich.client/los.reference/dist/jnlp/local/netbeans/'>
+  <information>
+   <title>antlr Library</title>
+   <vendor>NetBeans</vendor>
+   <description kind='one-line'>antlr Library</description>
+   <description kind='short'>antlr Library</description>
+  </information>
+<security><all-permissions/></security>
+  <resources>
+    <jar href='antlr/antlr.jar'/>
+    <jar href='antlr/ext-antlr-2.7.5.jar'/>
+  </resources>
+  <component-desc/>
+</jnlp>

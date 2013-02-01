@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE jasperReport PUBLIC "-//JasperReports//DTD JasperReport//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+
+<jasperReport name="LOSFuelOrderLogReport" printOrder="Horizontal" pageWidth="595" pageHeight="842" columnWidth="567" leftMargin="14" rightMargin="14" topMargin="61" bottomMargin="61">
+	<property name="ireport.scriptlethandling" value="0"/>
+	<property name="ireport.encoding" value="UTF-8"/>
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="de.linogistix.los.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<parameter name="LOS_NAME" class="java.lang.String"/>
+	<parameter name="LOS_STORAGELOCATION" class="java.lang.String"/>
+	<parameter name="LOS_DATE_FROM" class="java.util.Date"/>
+	<parameter name="LOS_DATE_TO" class="java.util.Date"/>
+	<field name="articleRef" class="java.lang.String"/>
+	<field name="articleDescr" class="java.lang.String"/>
+	<field name="lotRef" class="java.lang.String"/>
+	<field name="amount" class="java.math.BigDecimal"/>
+	<field name="amountordered" class="java.math.BigDecimal"/>
+	<field name="pos" class="java.lang.Integer"/>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band/>
+	</title>
+	<pageHeader>
+		<band height="94" splitType="Stretch">
+			<textField>
+				<reportElement uuid="8497709a-c258-40bf-b082-3730c6c5b3f8" x="442" y="0" width="125" height="20"/>
+				<textElement textAlignment="Right">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER} + " / " + $V{PAGE_COUNT}]]></textFieldExpression>
+			</textField>
+			<image scaleImage="RetainShape">
+				<reportElement uuid="59d65c6c-7547-4c9a-b248-823144806256" x="0" y="20" width="249" height="35"/>
+				<imageExpression><![CDATA[(de.linogistix.los.util.ImageAndBarcodeHelper.create128A(9999, 34, $P{LOS_ORDERNUMBER},false,true))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="a0fb08fc-e6ec-4d49-922e-ac5e1398f549" x="33" y="55" width="94" height="39"/>
+				<textElement>
+					<font isItalic="true"/>
+				</textElement>
+				<text><![CDATA[ΑΡΙΘΜΟΣ ΟΧΗΜΑΤΟΣ ή ΜΗΧΑΝΗΜΑΤΟΣ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4b768b73-dcc1-489f-86eb-d7d41fdeec2a" x="249" y="55" width="136" height="39"/>
+				<textElement>
+					<font isItalic="true"/>
+				</textElement>
+				<text><![CDATA[ΟΝΟΜΑΤΕΠΩΝΥΜΟ ΟΔΗΓΟΥ ή ΕΚΠΡΟΣΩΠΟΥ ΣΥΝΕΡΓΕΙΟΥ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="14a39543-3499-4fe9-abde-895da3dcc47d" x="385" y="55" width="87" height="39"/>
+				<textElement>
+					<font isItalic="true"/>
+				</textElement>
+				<text><![CDATA[ΧΟΡΗΓΗΘΕΙΣΑ ΠΟΣΟΤΗΤΑ (ΛΙΤΡΑ)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0a8ec968-d058-4e4c-a39c-300ab4bfb64b" x="472" y="55" width="95" height="39"/>
+				<textElement>
+					<font isItalic="true"/>
+				</textElement>
+				<text><![CDATA[ΥΠΟΛΟΙΠΟ ΔΕΞΑΜΕΝΗΣ (ΛΙΤΡΑ)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ed775e80-a3f6-440c-9aa8-ddfe7689999f" x="127" y="55" width="122" height="39"/>
+				<textElement>
+					<font isItalic="true"/>
+				</textElement>
+				<text><![CDATA[ΑΡΙΘΜΟΣ ΔΕΛΤΙΟΥ ΚΙΝΗΣΗΣ]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="d8857e6d-da37-4db4-bf36-385928575104" x="7" y="93" width="560" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="cde612a7-2932-4b34-88b3-459d45f75466" x="360" y="0" width="72" height="20"/>
+				<textElement textAlignment="Right">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Seite]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ab06b51a-85fd-424b-bb96-ab457ef803cd" x="0" y="55" width="33" height="20"/>
+				<textElement/>
+				<text><![CDATA[A/A]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="29" splitType="Stretch">
+			<textField>
+				<reportElement uuid="b423f245-1adc-4cdb-be90-152369c5dd4b" x="33" y="6" width="67" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{articleRef}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="08cd8dc4-f397-4950-a36f-175d0bbf1b3f" x="127" y="6" width="160" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{articleDescr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="76bce8f6-626c-4d43-98c5-dd149ed31edf" x="285" y="6" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{lotRef}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e3dde859-3f59-47fb-a6c6-a06d1d8e8e64" x="385" y="6" width="87" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{amountordered}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1f2af692-1fcd-477f-bfdf-2fcbd579b691" x="472" y="6" width="88" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{amount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f17f594e-b227-4f6a-86f1-13bb3ce11c53" x="0" y="6" width="33" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{pos}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,10 @@
+SET DEFINE OFF;
+Insert into JBOSS.LOS_AREA
+   (ID, AREATYPE)
+ Values
+   (1300, 'GOODS_IN');
+Insert into JBOSS.LOS_AREA
+   (ID, AREATYPE)
+ Values
+   (1301, 'GOODS_OUT');
+COMMIT;

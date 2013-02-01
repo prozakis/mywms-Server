@@ -1,0 +1,26 @@
+SET DEFINE OFF;
+Insert into JBOSS.MYWMS_USER_MYWMS_ROLE
+   (MYWMS_USER_ID, ROLES_ID)
+ Values
+   (1, 0);
+Insert into JBOSS.MYWMS_USER_MYWMS_ROLE
+   (MYWMS_USER_ID, ROLES_ID)
+ Values
+   (2, 0);
+Insert into JBOSS.MYWMS_USER_MYWMS_ROLE
+   (MYWMS_USER_ID, ROLES_ID)
+ Values
+   (4, 0);
+Insert into JBOSS.MYWMS_USER_MYWMS_ROLE
+   (MYWMS_USER_ID, ROLES_ID)
+ Values
+   (5, 0);
+Insert into JBOSS.MYWMS_USER_MYWMS_ROLE
+   (MYWMS_USER_ID, ROLES_ID)
+ Values
+   (0, 0);
+Insert into JBOSS.MYWMS_USER_MYWMS_ROLE
+   (MYWMS_USER_ID, ROLES_ID)
+ Values
+   (0, 1550);
+COMMIT;

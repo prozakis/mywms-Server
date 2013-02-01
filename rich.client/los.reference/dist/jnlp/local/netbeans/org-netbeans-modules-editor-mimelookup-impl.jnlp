@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE jnlp PUBLIC "-//Sun Microsystems, Inc//DTD JNLP Discriptor 1.5//EN" "http://java.sun.com/dtd/JNLP-1.5.dtd">
+<jnlp spec='1.0+' codebase='file:/home/Parhs/Documents/Programming/Java/mywms/rich.client/los.reference/dist/jnlp/local/netbeans/'>
+  <information>
+   <title>MIME Lookup On SystemFS</title>
+   <vendor>NetBeans</vendor>
+   <description kind='one-line'>The default implementation of MimeDataProvider.</description>
+   <description kind='short'>The MIME Lookup On SystemFS module implements MimeDataProvider that looks up objects in the folder hierarchy on the System filesystem.</description>
+  </information>
+<security><all-permissions/></security>
+  <resources>
+    <jar href='org-netbeans-modules-editor-mimelookup-impl/org-netbeans-modules-editor-mimelookup-impl.jar'/>
+  </resources>
+  <component-desc/>
+</jnlp>

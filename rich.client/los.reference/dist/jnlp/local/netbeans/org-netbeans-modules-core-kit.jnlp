@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE jnlp PUBLIC "-//Sun Microsystems, Inc//DTD JNLP Discriptor 1.5//EN" "http://java.sun.com/dtd/JNLP-1.5.dtd">
+<jnlp spec='1.0+' codebase='file:/home/Parhs/Documents/Programming/Java/mywms/rich.client/los.reference/dist/jnlp/local/netbeans/'>
+  <information>
+   <title>RCP Platform</title>
+   <vendor>NetBeans</vendor>
+   <description kind='one-line'>NetBeans RCP Platform</description>
+   <description kind='short'>The NetBeans RCP Platform is a generic framework for Swing applications. It provides the services common to almost all large desktop applications: window management, menus, settings and storage, update management, file access, etc.&lt;br>&lt;br>See more information at &lt;a href="http://platform.netbeans.org">platform.netbeans.org&lt;/a>.</description>
+  </information>
+<security><all-permissions/></security>
+  <resources>
+    <jar href='org-netbeans-modules-core-kit/org-netbeans-modules-core-kit.jar'/>
+  </resources>
+  <component-desc/>
+</jnlp>

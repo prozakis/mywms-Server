@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE jnlp PUBLIC "-//Sun Microsystems, Inc//DTD JNLP Discriptor 1.5//EN" "http://java.sun.com/dtd/JNLP-1.5.dtd">
+<jnlp spec='1.0+' codebase='file:/home/Parhs/Documents/Programming/Java/mywms/rich.client/los.reference/dist/jnlp/local/netbeans/'>
+  <information>
+   <title>Auto Update UI</title>
+   <vendor>NetBeans</vendor>
+   <description kind='one-line'>Supplies UI of Auto Update Services</description>
+   <description kind='short'>The UI allows to browse the installation and contents of registered Update Centers, to download updates or new modules and to automatically install modules.</description>
+  </information>
+<security><all-permissions/></security>
+  <resources>
+    <jar href='org-netbeans-modules-autoupdate-ui/org-netbeans-modules-autoupdate-ui.jar'/>
+  </resources>
+  <component-desc/>
+</jnlp>

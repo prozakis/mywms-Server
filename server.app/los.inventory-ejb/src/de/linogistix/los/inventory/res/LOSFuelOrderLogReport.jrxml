@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FuelOrderLog" printOrder="Horizontal" pageWidth="595" pageHeight="842" columnWidth="567" leftMargin="14" rightMargin="14" topMargin="61" bottomMargin="61">
+	<property name="ireport.scriptlethandling" value="0"/>
+	<property name="ireport.encoding" value="UTF-8"/>
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="de.linogistix.los.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<parameter name="LOS_DATE_FROM" class="java.util.Date"/>
+	<parameter name="LOS_DATE_TO" class="java.util.Date"/>
+	<field name="rcptArticleRef" class="java.lang.String"/>
+	<field name="rcptArticleDescr" class="java.lang.String"/>
+	<field name="vehiclePlateNumber" class="java.lang.String"/>
+	<field name="tankRemaining" class="java.math.BigDecimal"/>
+	<field name="receipientName" class="java.lang.String"/>
+	<field name="rcptPosQuantity" class="java.math.BigDecimal"/>
+	<field name="transactionDate" class="java.util.Date"/>
+	<group name="FuelType">
+		<groupExpression><![CDATA[$F{rcptArticleRef}]]></groupExpression>
+		<groupHeader>
+			<band height="28">
+				<textField>
+					<reportElement x="82" y="8" width="216" height="20"/>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="12" isBold="true" pdfEncoding="Cp1253"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{rcptArticleDescr}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="8" width="82" height="20"/>
+					<textElement>
+						<font fontName="Arial Unicode MS" isItalic="true" pdfEncoding="Cp1253"/>
+					</textElement>
+					<text><![CDATA[Τύπος Καυσίμου]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+	</group>
+	<group name="TransactionDate">
+		<groupExpression><![CDATA[$F{transactionDate}]]></groupExpression>
+		<groupHeader>
+			<band height="20">
+				<staticText>
+					<reportElement x="17" y="0" width="65" height="20"/>
+					<textElement>
+						<font fontName="Arial Unicode MS" isItalic="false" isUnderline="true" pdfEncoding="Cp1253"/>
+					</textElement>
+					<text><![CDATA[Απογραφή:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="82" y="0" width="160" height="20"/>
+					<textElement>
+						<font fontName="Arial Unicode MS" isBold="false" isUnderline="true" pdfEncoding="Cp1253"/>
+					</textElement>
+					<textFieldExpression class="java.util.Date"><![CDATA[$F{transactionDate}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="21"/>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="95" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="55" y="34" width="83" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial Unicode MS" size="12" isBold="true" pdfEncoding="Cp1253"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$P{LOS_DATE_FROM}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="34" width="55" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial Unicode MS" pdfEncoding="Cp1253"/>
+				</textElement>
+				<text><![CDATA[Από:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="138" y="0" width="311" height="34"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Unicode MS" size="22" isBold="true" pdfEncoding="Cp1253"/>
+				</textElement>
+				<text><![CDATA[Βιβλίο Καυσίμων ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="54" width="67" height="20"/>
+				<textElement>
+					<font fontName="Arial Unicode MS" isItalic="true" pdfEncoding="Cp1253"/>
+				</textElement>
+				<text><![CDATA[Όχημα]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="260" y="54" width="100" height="40"/>
+				<textElement>
+					<font fontName="Arial Unicode MS" isItalic="true" pdfEncoding="Cp1253"/>
+				</textElement>
+				<text><![CDATA[Χορηγηθείσα Ποσότητα σε λίτρα]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="54" width="100" height="20"/>
+				<textElement>
+					<font fontName="Arial Unicode MS" isItalic="true" pdfEncoding="Cp1253"/>
+				</textElement>
+				<text><![CDATA[Υπόλοιπο Δεξαμενής σε λίτρα]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="54" width="160" height="40"/>
+				<textElement>
+					<font fontName="Arial Unicode MS" isItalic="true" pdfEncoding="Cp1253"/>
+				</textElement>
+				<text><![CDATA[Ονοματεπώνυμο Οδηγού ή Εκπροσώπου Συνεργείου]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="94" width="560" height="1"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="34" width="91" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial Unicode MS" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$P{LOS_DATE_TO}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="138" y="34" width="42" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial Unicode MS" pdfEncoding="Cp1253"/>
+				</textElement>
+				<text><![CDATA[Έως:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="460" y="54" width="100" height="20"/>
+				<textElement>
+					<font fontName="Arial Unicode MS" isItalic="true" pdfEncoding="Cp1253"/>
+				</textElement>
+				<text><![CDATA[Υπογραφή]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="28" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="33" y="6" width="67" height="20"/>
+				<textElement>
+					<font fontName="Arial Unicode MS"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{vehiclePlateNumber}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="100" y="6" width="160" height="20"/>
+				<textElement>
+					<font fontName="Arial Unicode MS" pdfEncoding="Cp1253"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{receipientName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="360" y="6" width="100" height="20"/>
+				<textElement>
+					<font fontName="Arial Unicode MS" pdfEncoding="Cp1253"/>
+				</textElement>
+				<textFieldExpression class="java.math.BigDecimal"><![CDATA[$F{tankRemaining}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="260" y="6" width="100" height="20"/>
+				<textElement>
+					<font fontName="Arial Unicode MS" pdfEncoding="Cp1253"/>
+				</textElement>
+				<textFieldExpression class="java.math.BigDecimal"><![CDATA[$F{rcptPosQuantity}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

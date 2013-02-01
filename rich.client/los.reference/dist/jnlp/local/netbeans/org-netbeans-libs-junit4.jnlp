@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE jnlp PUBLIC "-//Sun Microsystems, Inc//DTD JNLP Discriptor 1.5//EN" "http://java.sun.com/dtd/JNLP-1.5.dtd">
+<jnlp spec='1.0+' codebase='file:/home/Parhs/Documents/Programming/Java/mywms/rich.client/los.reference/dist/jnlp/local/netbeans/'>
+  <information>
+   <title>JUnit 4</title>
+   <vendor>NetBeans</vendor>
+   <description kind='one-line'>Bundles the JUnit 4.x testing library.</description>
+   <description kind='short'>Includes the JUnit 4.x unit testing library.</description>
+  </information>
+<security><all-permissions/></security>
+  <resources>
+    <jar href='org-netbeans-libs-junit4/org-netbeans-libs-junit4.jar'/>
+    <jar href='org-netbeans-libs-junit4/ext-junit-4.5.jar'/>
+  </resources>
+  <component-desc/>
+</jnlp>

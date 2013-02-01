@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE jnlp PUBLIC "-//Sun Microsystems, Inc//DTD JNLP Discriptor 1.5//EN" "http://java.sun.com/dtd/JNLP-1.5.dtd">
+<jnlp spec='1.0+' codebase='file:/home/Parhs/Documents/Programming/Java/mywms/rich.client/los.reference/dist/jnlp/local/netbeans/'>
+  <information>
+   <title>Apache Library</title>
+   <vendor>NetBeans</vendor>
+   <description kind='one-line'>Apache Library</description>
+   <description kind='short'>Apache Library</description>
+  </information>
+<security><all-permissions/></security>
+  <resources>
+    <jar href='org-apache-commons/org-apache-commons.jar'/>
+    <jar href='org-apache-commons/ext-commons-logging.jar'/>
+    <jar href='org-apache-commons/ext-commons-beanutils.jar'/>
+    <jar href='org-apache-commons/ext-commons-beanutils-bean-collections.jar'/>
+    <jar href='org-apache-commons/ext-commons-beanutils-core.jar'/>
+    <jar href='org-apache-commons/ext-commons-collections-3.2.jar'/>
+    <jar href='org-apache-commons/ext-commons-digester-1.8.jar'/>
+    <jar href='org-apache-commons/ext-commons-validator-1.1.4.jar'/>
+    <jar href='org-apache-commons/ext-log4j.jar'/>
+  </resources>
+  <component-desc/>
+</jnlp>
